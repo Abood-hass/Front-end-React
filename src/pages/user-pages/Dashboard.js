@@ -12,6 +12,8 @@ import {
     Breadcrumb,
     Layout,
     Menu,
+    Table,
+    Space,
 } from 'antd';
 import {followersData, followersCOL, postCOL, postsData} from "../../data/tabelsData";
 import {ToastContainer} from "react-toastify";
