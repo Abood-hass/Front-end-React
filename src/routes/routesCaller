@@ -1,0 +1,7 @@
+const routes = require("./SavedRoutes")
+
+const LoginRoute = async () => {
+
+    return routes
+}
+export default {LoginRoute};

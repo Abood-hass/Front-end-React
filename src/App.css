@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('antd/dist/antd.css');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+label {
+  font-size: .7rem;
+}
+
+input.form-control, input.form-control:focus {
+  background: #F0F0FF;
+}
+
+.btn{
+  float: right;
+  margin-right: 10%
+}
+
+.mainDiv {
+  margin-top: 20%;
+}
+.error {
+  position: absolute;
+  color: red;
+  font-size: .6rem;
+}
+
+
+.alert {
+  width: max-content;
+  height: max-content;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.alert.alert-danger {
+  background-color: rgba(248, 215, 218, 1);
+  border-color: rgba(220, 53, 69, 1);
+  color: rgba(114, 28, 36,1);
+}
+
+#components-layout-demo-responsive .logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.site-layout-sub-header-background {
+  background: #fff;
+}
+
+.site-layout-background {
+  background: #fff;
+}
+
+.AvatarCont {
+
+  text-align: center;
+  padding: 15px 0px;
+}
