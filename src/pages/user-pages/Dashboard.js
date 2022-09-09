@@ -6,29 +6,22 @@ import {
     Form,
     Input,
     Button,
-    Radio,
     Select,
-    Cascader,
-    DatePicker,
     Descriptions,
     Upload,
     Table,
     Breadcrumb,
     Layout,
     Menu,
-    Typography as ty, Space
 } from 'antd';
 import {followersData, followersCOL, postCOL, postsData} from "../../data/tabelsData";
 import {ToastContainer} from "react-toastify";
 import {mainMenuItems} from "../../components/menuItem";
-import {map} from "react-bootstrap/ElementChildren";
 import {followersView, newPostView, postsView, profileView} from "../../data/titlesData";
 
 const { Header, Content, Footer, Sider } = Layout;
-const { RangePicker } = DatePicker;
 const { TextArea } = Input;
 
-let {Title, } = ty
 
 
 
