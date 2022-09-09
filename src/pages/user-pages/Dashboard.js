@@ -9,7 +9,6 @@ import {
     Select,
     Descriptions,
     Upload,
-    Table,
     Breadcrumb,
     Layout,
     Menu,
@@ -21,7 +20,6 @@ import {followersView, newPostView, postsView, profileView} from "../../data/tit
 
 const { Header, Content, Footer, Sider } = Layout;
 const { TextArea } = Input;
-
 
 
 
@@ -49,12 +47,12 @@ export const Dashboard = () => {
     }
 
     const profileContant =
-            [
-                    <Descriptions.Item span={2} contentStyle={{fontSize:'20px'}} labelStyle={{fontSize:'20px', fontWeight:"bolder"}} label="UserName">{}</Descriptions.Item>,
-                    <Descriptions.Item span={2} contentStyle={{fontSize:'20px'}} labelStyle={{fontSize:'20px', fontWeight:"bolder"}} label="Telephone">1810000000</Descriptions.Item>,
-                    <Descriptions.Item span={2} contentStyle={{fontSize:'20px'}} labelStyle={{fontSize:'20px', fontWeight:"bolder"}} label="Email">abood@gmail.com</Descriptions.Item>,
-                    <Descriptions.Item span={2} contentStyle={{fontSize:'20px'}} labelStyle={{fontSize:'20px', fontWeight:"bolder"}} label="Remark">empty</Descriptions.Item>
-                ]
+        [
+            <Descriptions.Item span={2} contentStyle={{fontSize:'20px'}} labelStyle={{fontSize:'20px', fontWeight:"bolder"}} label="UserName">{}</Descriptions.Item>,
+            <Descriptions.Item span={2} contentStyle={{fontSize:'20px'}} labelStyle={{fontSize:'20px', fontWeight:"bolder"}} label="Telephone">1810000000</Descriptions.Item>,
+            <Descriptions.Item span={2} contentStyle={{fontSize:'20px'}} labelStyle={{fontSize:'20px', fontWeight:"bolder"}} label="Email">abood@gmail.com</Descriptions.Item>,
+            <Descriptions.Item span={2} contentStyle={{fontSize:'20px'}} labelStyle={{fontSize:'20px', fontWeight:"bolder"}} label="Remark">empty</Descriptions.Item>
+        ]
 
 
 
@@ -79,7 +77,7 @@ export const Dashboard = () => {
                 </div>
                 <Sider theme={"light"}
                        style={{
-                        backgroundColor: '#e9eee8',
+                           backgroundColor: '#e9eee8',
                        }} collapsible collapsed={collapsed} onCollapse={(value) => setCollapsed(value)}>
                     <Menu
                         defaultSelectedKeys={['1.1']}
@@ -121,7 +119,7 @@ export const Dashboard = () => {
                                             y:450
                                         }} />
                                 </>
-                                    ):(
+                            ):(
                                 (viewKey==="2.1")?(<>
                                     {postsView}
                                     <Table
@@ -129,8 +127,8 @@ export const Dashboard = () => {
                                             overflow: 'hidden'
                                         }}
                                         pagination={{
-                                        hideOnSinglePage:true
-                                    }} loading={loading} columns={postCOL} dataSource={postsData} scroll={
+                                            hideOnSinglePage:true
+                                        }} loading={loading} columns={postCOL} dataSource={postsData} scroll={
                                         {
                                             y:450
                                         }} />
@@ -177,8 +175,8 @@ export const Dashboard = () => {
                                             </Form.Item>
                                             <Form.Item>
                                                 <Space size={"large"} style={{float:"right"}}>
-                                                <Button type={"primary"} icon={<SendOutlined />}>Post</Button>
-                                                <Button type={"ghost"} icon={<ClearOutlined />}>Clear all</Button>
+                                                    <Button type={"primary"} icon={<SendOutlined />}>Post</Button>
+                                                    <Button type={"ghost"} icon={<ClearOutlined />}>Clear all</Button>
                                                 </Space>
                                             </Form.Item>
                                         </Form>
@@ -191,7 +189,7 @@ export const Dashboard = () => {
                                             {profileContant.map(item=> item)}
                                         </Descriptions>
                                     </>
-                                 )
+                                )
 
                             )}
 
